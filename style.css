@@ -25,6 +25,10 @@ body {
     font-size: 12px;
     letter-spacing: .8px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 h1 {
     font-size: 3em;
     font-weight: 600;
@@ -104,6 +108,8 @@ a {
 
 }
 
+
+
 .navbar{
     padding: 1em 0 !important;
 }
@@ -170,6 +176,7 @@ a {
     color: #363636;
     font-size: 1em;}
 
+    
     .input-design-2 textarea {
         background: #f1f6fc;
         width: 100%;
@@ -180,7 +187,7 @@ a {
         color: #363636;
         font-size: 1em;}
 
-        
+      
 
     .form-text h2{
         color:var(--quinary-color);
@@ -201,6 +208,10 @@ a {
     }
 
     .services-left h2 span{
+        color: var(--primary-color);
+    }
+
+    .service-we-provide h4{
         color: var(--primary-color);
     }
    
@@ -228,16 +239,17 @@ a {
         border-radius: 1em;
      }
     
-
+#tns4-ow{
+    width: 50%;
+}
 
 
      /* Services-available-sec-end */
 
      /* work-sec-start */
 
-     .our-works img{
-width: 90%;
-height: 100%;
+     .few-works img{
+width: 10em;
      }
 
      /* work-sec-end */
@@ -302,6 +314,7 @@ height: 100%;
         padding: 3em 1em;
         text-align: center;
         color: var(--quinary-color);
+        
      }
      
      /* how-it-works-end */
@@ -400,6 +413,59 @@ height: 100%;
 
      /* <!-- customer-reviews-sec-end--> */
 
+     /* numbers-sec-start */
+
+     .numbers-sec{
+        background-image: url(assets/how-it-works-bg.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 100%;
+     }
+
+     .numbers-sec h2{
+        color: var(--quinary-color);
+        margin-bottom: 1.5em;
+        text-align: center;
+        font-size: 3em;
+     }
+
+     .number-card {
+        text-align: center;
+        
+     }
+     .numb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .number-card p{
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 6em;
+        font-weight: 600;
+     }
+     .number-card span{
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 6em;
+        font-weight: 600;
+     }
+
+     .number-card h4{
+        color: var(--quinary-color);
+        text-align: center;
+        font-size: 3em;
+        font-weight: 400;
+
+     }
+
+
+     /* numbers-sec-end */
+
      /* footer-sec-start */
 
      .footer-sec{
@@ -428,6 +494,27 @@ height: 100%;
         font-weight: 400;
         line-height: 0;
      }
+
+
+     .footer-links{
+        text-decoration: none;
+        color: var(--primary-color);
+        margin-top: 1em;
+     }
+
+     .footer-links:hover{
+        color: var(--quinary-color);
+     }
+
+     .footer-link-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    
+     }
+
 
      
 

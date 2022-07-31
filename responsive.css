@@ -9,6 +9,8 @@ Version: 1.0
     .form{
         margin-top: 6em;
     }
+
+    
     
 }
 
@@ -39,6 +41,8 @@ Version: 1.0
 }
 
 @media (max-width: 767.98px) {
+
+    
     
 
     .navbar {
@@ -73,7 +77,8 @@ width: 100%;
    }
    
    .service-card{
-    padding: 6em 11em;
+    padding: 6em 4em;
+    margin-left: 2em;
    }
 
    .our-works img{
@@ -99,5 +104,39 @@ width: 100%;
    .client-logo-img .banner-image{
     width: 7em;
    }
+
+   #tns4-ow{
+    width: 100%;
+
+   
+    
+}
+
+.service-responsible{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#tns2-iw{
+    margin: -5px !important;
+}
+
+#tns2{
+    width: calc(1300%);
+}
+
+.our-work-responsive{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer-link-sec{
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.sm-padding{
+    padding: 6em 0;
+}
 
 }

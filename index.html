@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="tiny-slider.css">
     
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WGHWV5HHKP"></script>
     <script>
@@ -70,19 +71,20 @@
     <header>
         <nav class="navbar navbar-expand-lg header-bg fixed-top">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#"><img src="assets/logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><img src="assets/icons/menu.png" alt=""></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link active" aria-current="page" href="#how-it-wrok">How it works ?</a>
+                  <a class="nav-link" href="#services">Services</a>
                   <a class="nav-link" href="#">About</a>
                   <div class="nav-social-links-responsive">
                     <a href=""><img src="assets/icons/Social Media/Facebook.png" alt=""></a>
                     <a href=""><img src="assets/icons/Social Media/Twitter.png" alt=""></a>
                     <a href=""><img src="assets/icons/Social Media/Instagram.png" alt=""></a>
+                    <a href="tel:123-456-7890"><img src="assets/icons/phone-with-wire.png" alt=""></a>
                   </div>
                 </div>
               </div>
@@ -90,6 +92,7 @@
                 <a href=""><img src="assets/icons/Social Media/Facebook.png" alt=""></a>
                 <a href=""><img src="assets/icons/Social Media/Twitter.png" alt=""></a>
                 <a href=""><img src="assets/icons/Social Media/Instagram.png" alt=""></a>
+                <a href="tel:123-456-7890"><img src="assets/icons/phone-with-wire.png" alt=""></a>
               </div>
             </div>
           </nav>
@@ -103,7 +106,7 @@
             <div class="row align-items-center justify-content-center mt-4 hero-responsive">
                 <div class="col-md-12 col-lg-6  ">
                     <div class="form">
-                        <div class="form-text">
+                        <div class="form-text ">
                             <h2>Send us the query</h2>
                         </div>
                         <form action="src/index.php" method="post">
@@ -127,10 +130,14 @@
                                     </div>
                                     <div class="col-md-6 mb-3 ">
                                         <div class=" input-design ">
-                                            <input type="text " name="location" id="phone" placeholder="Location"
-                                                required=" ">
+                                            <select class="form-select input-form-select" id="Location" name="product" aria-label="Default select example">
+                                                <option selected="">Banglore</option>
+                                                <option value="Airbnb Clone">Hyderabad</option>
+                                                
+                                            </select>
                                         </div>
                                     </div>
+                                    
                                     <div class="col-md-12 mb-3">
                                         <div class=" input-design-2">
                                             <textarea id="message" name="message" placeholder="Brief Note About the Problem *" rows="5"
@@ -149,10 +156,14 @@
                 <div class="col-md-12 col-lg-6">
                     
                     <div class="hero-text ">
-                        <h1>You Break, We Collect, <br>
-                            <span>We Repair !</span>
+                        <h1>Got a Glitch? We'll fix it!
+                            
+                            <br>
+                            <span>It's just one call away!</span>
                             </h1>
-                            <p> <span>"</span> You Break, We Collect,You Break, We Collect,You Break, We Collect,You Break, We Collect,<span>"</span>
+                            <p> <span>"</span> ALL YOUR GADGET PROBLEMS AT ONE STOP
+                                GUARANTEED SERVICE WITHIN 3 HOURS!
+                                FREE PICK UP & DROP !!!<span>"</span>
                             </p>
 
                     </div>
@@ -174,8 +185,11 @@
                 <div class="col-md-12 col-lg-6  >
                     <div class="services-left">
                         <h2><span>Services</span>  we provide</h2>
-                        <p>t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <p>t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h4>MOBILE </h4>
+                        <p>Maintaining your mobile phone requires regular repair and service. We fix all kinds of mobile problems let it shall be IOS or Android with one of the best technicians at an affordable price. You may need to repair your broken screen, replace your battery, or replace the display on your mobile. You can submit the request online and have it done in under two hours. We have a lot of experience in this field, so you can be sure that everything will get fixed to perfection, Call us today for a free quote!</p>
+                        <h4>TABLET</h4>
+                        <p>With one of the best technicians in the industry, we repair all kinds of tablet problems. Among the problems we fix are broken screens, broken displays, sim cards, batteries, speakers, etc. No matter what the problem is, we can help you resolve it quickly. We can provide you with a free estimate if you contact us today.
+                        </p>
                     
 
                     </div>
@@ -190,40 +204,73 @@
         </div>
 
     </section>
+    <section class="service-we-provide sm-padding">
+        <div class="container">
+            <div class="row align-items-center service-responsible">
+                <div class="col-lg-6 col-md-12">
+                    <img src="assets/service-banner-2.png" alt="">
+
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="services-left">
+                        <h4>LAPTOP/Desktop </h4>
+                        <p>Whenever you need a fast, quick, and reliable laptop or desktop repair service, we are the best in town. We have experienced technicians who can fix almost any problem you may have with your laptop & Monitor. Whether it's a software issue or a hardware problem, we will fix it in no time. Our technicians are certified, professional, and quick! We can service any brand and model of laptop & Desktop, so you can rest assured that it will be done correctly. Get a free quote from us today!</p>
+                        <h4>APPLE WATCH</h4>
+                        <p>Our Apple Watch or I-watch repair services are among the best in the industry. We can fix all kinds of Apple Watch problems, including cracked screens, broken displays, and dead batteries. Apple Watch repairs are best handled by us. Our technicians can quickly and easily fix any issue you might be experiencing with your watch. Call us today for a free quote!
+                        </p>
+                    
+
+                    </div>
+                   
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
 
      <!-- services-we-provide-sec-end -->
 
      <!-- service-available-sec-start -->
 
-     <section class="service-available sm-padding">
+     <section class="service-available sm-padding" id="services">
         <div class="container">
             <h2>Services <span>available</span></h2>
             <div class="row justify-content-center align-items-center g-4">
-                <div class="col-lg-2 col-md-3">
-                    <div class="service-card">
-                        <img src="assets/icons/smartphone 1.png" alt="">
+                <div class="my-services">
+                    <div class="col-lg-2 col-md-3">
+                        <div class="service-card">
+                            <img src="assets/icons/smartphone 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="service-card">
+                            <img src="assets/icons/smartphone 1-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="service-card">
+                            <img src="assets/icons/smartphone 1-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="service-card">
+                            <img src="assets/icons/smartphone 1-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="service-card">
+                            <img src="assets/icons/smartphone 1-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3">
+                        <div class="service-card">
+                            <img src="assets/icons/smartphone 1-4.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3">
-                    <div class="service-card">
-                        <img src="assets/icons/smartphone 1-1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3">
-                    <div class="service-card">
-                        <img src="assets/icons/smartphone 1-2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3">
-                    <div class="service-card">
-                        <img src="assets/icons/smartphone 1-3.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3">
-                    <div class="service-card">
-                        <img src="assets/icons/smartphone 1-4.png" alt="">
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -232,18 +279,27 @@
      <!-- service-available-sec-End -->
         <!-- our-work-sec-start -->
     
-    <section class="our-works sm-padding">
+    <section class="our-works sm-padding ">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 col-lg-6">
+            <div class="row align-items-center our-work-responsive">
+                <div class="col-md-12 col-lg-6 few-works">
                     <img src="assets/works section.png" alt="">
+                    <img src="assets/works-section-2.png" alt="">
+                    <img src="assets/works-section-3.png" alt="">
+                    <img src="assets/works-section-4.png" alt="">
+                    <img src="assets/works-section-5.png" alt="">
+                    <img src="assets/works-section-6.png" alt="">
+                    <img src="assets/works-section-7.png" alt="">
+                    
 
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <div class="services-left">
-                        <h2><span>Services</span>  we provide</h2>
-                        <p>t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <p>t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <h2><span>Few of our works that</span>  we have done in the past</h2>
+                        <p>More than 10460 customers have used our services and our customers have enjoyed some of the best quality services at their convenience. The prices we offer are one of the most affordable in town, and the service we provide is of the highest quality.
+                        </p>
+                        <p>Finding a good, affordable, and quality service can be challenging. That's why we offer high-quality service at an incredibly low price. This is the best deal you'll find anywhere.</p>
+                        <p>Our services are not only affordable and reliable, but we also come to you. With us, you'll never have to wait in line or go anywhere. In addition, we have the best technicians in the industry. Count on us to handle everything for you. Book your appointment with Express Mobile Service by clicking the Request Form!</p>
                     
 
                     </div>
@@ -313,10 +369,22 @@
      <!-- brands-sec-End -->
 
      <!-- how-it-works-sec-start -->
-     <section class="how-it-works sm-padding" >
+     <section class="how-it-works sm-padding" id="how-it-wrok" >
         <div class="container">
-            <h2>How It Works At <span> Fixman Service Center </span></h2>
+            <h2>How It Works At <span> Express Mobile Service </span></h2>
             <div class="row align-items-center justify-content-center g-5">
+                <div class="col-lg-3 col-md-4">
+                    <div class="how-it-works-card">
+                        <div class="image-sec">
+                            <img src="assets/icons/phone-call.png" alt="">
+
+                        </div>
+                        <h4>
+                            CONTACT US
+                        </h4>
+                        <p>Let's discuss the problem and the price.</p>
+                    </div>
+                </div>
                 <div class="col-lg-3 col-md-4">
                     <div class="how-it-works-card">
                         <div class="image-sec">
@@ -324,9 +392,9 @@
 
                         </div>
                         <h4>
-                            Book Your Repair
+                            SCHEDULE AN APPOINTMENT
                         </h4>
-                        <p>View prices upfront and book appoinment Online or on call</p>
+                        <p>Choose a time and location that is convenient for you.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4">
@@ -336,9 +404,21 @@
 
                         </div>
                         <h4>
-                            Visit & Repair
+                            FREE PICK-UP
                         </h4>
-                        <p>View prices upfront and book appoinment Online or on call</p>
+                        <p>Enjoy peace of mind while our executives pick up your device.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="how-it-works-card">
+                        <div class="image-sec">
+                            <img src="assets/icons/wrench.png" alt="">
+
+                        </div>
+                        <h4>
+                            DIAGNOSIS & REPAIR
+                        </h4>
+                        <p>Our expert technician will make it like new again.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4">
@@ -348,33 +428,9 @@
 
                         </div>
                         <h4>
-                            Receive & Pay
+                            FREE DROP
                         </h4>
-                        <p>View prices upfront and book appoinmentOnline or on call</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="how-it-works-card">
-                        <div class="image-sec">
-                            <img src="assets/icons/schedule 1-2.png" alt="">
-
-                        </div>
-                        <h4>
-                            Receive & Pay
-                        </h4>
-                        <p>View prices upfront and book appoinmentOnline or on call</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="how-it-works-card">
-                        <div class="image-sec">
-                            <img src="assets/icons/schedule 1-2.png" alt="">
-
-                        </div>
-                        <h4>
-                            Receive & Pay
-                        </h4>
-                        <p>View prices upfront and book appoinmentOnline or on call</p>
+                        <p>Let our executives drop the device at your location while you relax.</p>
                     </div>
                 </div>
             </div>
@@ -389,67 +445,67 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-4">
                     <div class="why-choose-card">
-                        <img src="assets/icons/mob-icon.png" alt="">
+                        <img src="assets/icons/key.png" alt="">
                         <div class="card-line">
                             
                         </div>
-                        <h4>Mobile Repair</h4>
-                        <p>Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla.</p>
+                        <h4>All-in-one solution</h4>
+                        <p>No matter what brand or model you have, we can fix it.</p>
 
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="why-choose-card">
-                        <img src="assets/icons/mob-icon.png" alt="">
+                        <img src="assets/icons/repairing.png" alt="">
                         <div class="card-line">
 
                         </div>
-                        <h4>Mobile Repair</h4>
-                        <p>Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla.</p>
+                        <h4> Providing premium repair services</h4>
+                        <p>Top quality certified parts.</p>
 
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="why-choose-card">
-                        <img src="assets/icons/mob-icon.png" alt="">
+                        <img src="assets/icons/customer-service.png" alt="">
                         <div class="card-line">
 
                         </div>
-                        <h4>Mobile Repair</h4>
-                        <p>Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla.</p>
+                        <h4>Clients served </h4>
+                        <p>More than 10000+ clients have trusted us for our Service</p>
 
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="why-choose-card">
-                        <img src="assets/icons/mob-icon.png" alt="">
+                        <img src="assets/icons/best-price.png" alt="">
                         <div class="card-line">
 
                         </div>
-                        <h4>Mobile Repair</h4>
-                        <p>Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla.</p>
+                        <h4>The best price guarantee </h4>
+                        <p>We offer the best prices in the market</p>
 
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="why-choose-card">
-                        <img src="assets/icons/mob-icon.png" alt="">
+                        <img src="assets/icons/safety.png" alt="">
                         <div class="card-line">
 
                         </div>
-                        <h4>Mobile Repair</h4>
-                        <p>Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla.</p>
+                        <h4>We guarantee your safety</h4>
+                        <p>Security for your devices and data.</p>
 
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="why-choose-card">
-                        <img src="assets/icons/mob-icon.png" alt="">
+                        <img src="assets/icons/mechanic.png" alt="">
                         <div class="card-line">
 
                         </div>
-                        <h4>Mobile Repair</h4>
-                        <p>Duis posuere blandit orci sed tincidunt. Curabitur porttitor nisi ac nunc ornare, in fringilla.</p>
+                        <h4>Professional Technicians</h4>
+                        <p>Professionals with extensive training and qualifications.</p>
 
                     </div>
                 </div>
@@ -466,58 +522,145 @@
         <div class="container">
             <h2>Customer Reviews</h2>
             <div class="row">
-                <div class="col-lg-3 col-md-4">
-                    <div class="customer-review-card-1">
-                        <div class="text-section">
-                            <h5>Rajeev</h5>
-                            <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <div class="cs-reviews">
+                    
+                    <div class="col-lg-3 col-md-4">
+                        <div class="customer-review-card-1">
+                            <div class="text-section">
+                                <h5>Rajeev</h5>
+                                <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
                         </div>
+    
                     </div>
-
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="customer-review-card-2">
-                        <div class="text-section">
-                            <h5>Rajeev</h5>
-                            <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="customer-review-card-2">
+                            <div class="text-section">
+                                <h5>Rajeev</h5>
+                                <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
                         </div>
+    
                     </div>
-
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="customer-review-card-3">
-                        <div class="text-section">
-                            <h5>Rajeev</h5>
-                            <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="customer-review-card-3">
+                            <div class="text-section">
+                                <h5>Rajeev</h5>
+                                <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
                         </div>
+    
                     </div>
-
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="customer-review-card-4">
-                        <div class="text-section">
-                            <h5>Rajeev</h5>
-                            <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="customer-review-card-4">
+                            <div class="text-section">
+                                <h5>Rajeev</h5>
+                                <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
                         </div>
+    
                     </div>
-
+                    <div class="col-lg-3 col-md-4">
+                        <div class="customer-review-card-4">
+                            <div class="text-section">
+                                <h5>Rajeev</h5>
+                                <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="customer-review-card-4">
+                            <div class="text-section">
+                                <h5>Rajeev</h5>
+                                <p>centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                            </div>
+                        </div>
+    
+                    </div>
                 </div>
             </div>
         </div>
      </section>
      <!-- customer-reviews-sec-end-->
 
+     
+     <!-- numbers-sec-start -->
+     <section class="numbers-sec sm-padding">
+        <div class="container">
+            <h2>Our Counts</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="number-card">
+                        <div class="numb">
+                            <p class="count">10687</p> 
+                        <span>+</span>
+
+                        </div>
+                        
+                    <h4>No of client </h4>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="number-card">
+                        <div class="numb">
+                            <p class="count">2</p> 
+                        <span>+</span>
+
+                        </div>
+                    <h4>No of years</h4>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="number-card">
+                        <div class="numb">
+                            <p class="count">4.9</p> 
+                        <span></span>
+
+                        </div>
+                    <h4>Rating</h4>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="number-card">
+                        <p class="count">99%</p>
+                    <h4>Satisfaction</h4>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+     </section>
+     <!-- numbers-sec-end -->
+
+    
      <!-- footer-sec-start -->
      <section class="footer-sec sm-padding">
         <div class="container">
             <div class="row ">
                 <div class="col-md-4">
-                    <h4>LOGO</h4>
+                    <a href=""><img src="assets/logo.png" alt=""></a>
                     <p>t ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bsoftware like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
 
                 <div class="col-md-4">
-                        
+                    <div class="footer-link-sec">
+                        <h4>Useful Links</h4>
+                        <a class="footer-links aria-current="page" href="#how-it-wrok">How it works ?</a>
+                    <a class="footer-links" href="#">About</a>
+                    <a class="footer-links" href="#">Privacy Policy</a>
+                    <a class="footer-links" href="#">Terms & Condition</a>
+
+                    </div>
+                    
                 </div>
 
                 <div class="col-md-3">
@@ -572,11 +715,41 @@
     <script src="jquery-main.js"></script>
     <script src="lazy-loader.js"></script>
     <script src="tiny-slider.js"></script>
+    <script src="counter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script>
     var slider = tns({
         container: '.my-slider',
+        items: 5,
+
+        autoplay: true,
+        autoplayTimeout: 1000,
+        responsive: {
+            360: {
+                items: 2,
+                edgePadding: 30,
+                gutter: 30,
+            },
+            640: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 3
+            },
+            700: {
+                gutter: 30,
+                items: 4
+
+            },
+            900: {
+                items: 5
+            }
+        }
+    });
+    </script>
+    <script>
+    var slider = tns({
+        container: '.my-services',
         items: 5,
 
         autoplay: true,
@@ -597,6 +770,60 @@
             },
             900: {
                 items: 5
+            }
+        }
+    });
+    </script>
+    <script>
+    var slider = tns({
+        container: '.cs-reviews',
+        items: 6,
+
+        autoplay: true,
+        autoplayTimeout: 1000,
+        responsive: {
+            360: {
+                items: 1
+            },
+            640: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 3
+            },
+            700: {
+                gutter: 30,
+                items: 4
+
+            },
+            900: {
+                items: 4
+            }
+        }
+    });
+    </script>
+    <script>
+    var slider = tns({
+        container: '.few-works',
+        items: 6,
+
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+            360: {
+                items: 1
+            },
+            640: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 1
+            },
+            700: {
+                gutter: 30,
+                items: 1
+
+            },
+            900: {
+                items: 1
             }
         }
     });
